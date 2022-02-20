@@ -87,7 +87,7 @@ export default function Container(props: {
             <NavItem href="https://snippets.sasi.codes" text="Snippets" />
             <NavItem href="/uses" text="Uses" />
             <NavItem
-              href="https://github.com/sasicodes/sasi.codes"
+              href="https://github.com/sasicodes/sasi.codes/discussions/2"
               text="Guestbook"
               target="_blank"
             />
