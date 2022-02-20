@@ -57,22 +57,7 @@ export default function MobileMenu() {
               <a className="flex w-auto pb-4">Home</a>
             </Link>
           </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '175ms' }}
-          >
-            <Link href="/guestbook">
-              <a className="flex w-auto pb-4">Guestbook</a>
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '200ms' }}
-          >
-            <Link href="/dashboard">
-              <a className="flex w-auto pb-4">Dashboard</a>
-            </Link>
-          </li>
+
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: '250ms' }}
@@ -85,24 +70,8 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: '275ms' }}
           >
-            <Link href="/snippets">
+            <Link href="https://snippets.sasi.codes">
               <a className="flex w-auto pb-4">Snippets</a>
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '300ms' }}
-          >
-            <Link href="/newsletter">
-              <a className="flex w-auto pb-4">Newsletter</a>
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '325ms' }}
-          >
-            <Link href="/tweets">
-              <a className="flex w-auto pb-4">Tweets</a>
             </Link>
           </li>
           <li
@@ -111,6 +80,16 @@ export default function MobileMenu() {
           >
             <Link href="/uses">
               <a className="flex w-auto pb-4">Uses</a>
+            </Link>
+          </li>
+          <li
+            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
+            style={{ transitionDelay: '175ms' }}
+          >
+            <Link href="https://github.com/sasicodes/sasi.codes">
+              <a target="_blank" className="flex w-auto pb-4">
+                Guestbook
+              </a>
             </Link>
           </li>
         </ul>
