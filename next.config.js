@@ -5,7 +5,7 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   images: {
-    domains: ['cloudflare-ipfs.com']
+    domains: ['cloudflare-ipfs.com', 'metadata.ens.domains']
   },
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build

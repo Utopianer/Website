@@ -9,7 +9,7 @@ const ExternalLink = ({
 }) => (
   <div className="text-center">
     <a
-      className="text-gray-400 transition hover:underline hover:text-gray-500"
+      className="text-gray-800 transition dark:text-gray-200 hover:underline hover:opacity-70"
       target="_blank"
       rel="noopener noreferrer"
       href={href}
@@ -46,7 +46,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 ml-auto text-gray-200"
+            className="w-5 h-5 ml-auto text-gray-800 dark:text-gray-200"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
