@@ -1,6 +1,6 @@
 import Container from 'components/Container'
 import SnippetCard from 'components/SnippetCard'
-import { getAllFilesFrontMatter } from 'lib/mdx'
+import { getAllFilesFrontMatter } from 'helpers/mdx'
 import React from 'react'
 import { FrontMatter } from 'types'
 

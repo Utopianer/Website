@@ -1,6 +1,6 @@
 import Container from 'components/Container'
 import MDXComponents from 'components/mdx/MDXComponents'
-import { getFileBySlug, getFiles } from 'lib/mdx'
+import { getFileBySlug, getFiles } from 'helpers/mdx'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { MDXRemote } from 'next-mdx-remote'
