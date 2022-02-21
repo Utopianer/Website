@@ -52,7 +52,7 @@ const useENS = (address: string) => {
       setLoading(true);
       if (address && ethers.utils.isAddress(address)) {
         try {
-          const provider = new ethers.providers.JsonRpcProvider(URL_TO_RPC_NODE);
+          const provider = new ethers.providers.getDefaultProvider();
 
           const ensName = await provider.lookupAddress(address);
 
