@@ -41,6 +41,12 @@ export default function Document() {
           content="/static/favicons/browserconfig.xml"
           name="msapplication-config"
         />
+        <script
+          async
+          defer
+          data-website-id="7fe34e1f-d06f-415b-98bc-c10004281128"
+          src="https://sudo-umami.up.railway.app/umami.js"
+        />
       </Head>
       <body>
         <Main />
