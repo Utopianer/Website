@@ -8,5 +8,5 @@ html {
 }
 
 body {
-  @apply text-white font-sans bg-gray-50 dark:bg-gray-900 min-h-screen flex flex-col;
+  @apply text-white cursor-default font-sans bg-gray-50 dark:bg-gray-900 min-h-screen flex flex-col;
 }
