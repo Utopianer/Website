@@ -16,6 +16,10 @@
     {
       "source": "/chat",
       "destination": "https://discord.com/users/0255"
+    },
+    {
+      "source": "/guestbook",
+      "destination": "https://github.com/sasicodes/sasi.codes/discussions/2"
     }
   ]
 }

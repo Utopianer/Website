@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import clsx from 'clsx'
 import Link from 'next/link'
 
 export default function ProjectCard({
@@ -18,7 +18,7 @@ export default function ProjectCard({
     <Link href={href}>
       <a
         target="_blank"
-        className={cn(
+        className={clsx(
           'transform transition-all',
           'rounded-xl w-full bg-gradient-to-r p-1',
           gradient

@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import clsx from 'clsx'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import styles from 'styles/mobile-menu.module.css'
@@ -33,7 +33,7 @@ export default function MobileMenu() {
   return (
     <>
       <button
-        className={cn(styles.burger, 'visible md:hidden')}
+        className={clsx(styles.burger, 'visible md:hidden')}
         aria-label="Toggle menu"
         type="button"
         onClick={toggleMenu}
@@ -43,7 +43,7 @@ export default function MobileMenu() {
       </button>
       {isMenuMounted && (
         <ul
-          className={cn(
+          className={clsx(
             styles.menu,
             'flex flex-col absolute bg-gray-50 dark:bg-gray-900',
             isMenuRendered && styles.menuRendered

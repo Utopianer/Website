@@ -1,0 +1,89 @@
+---
+title: Custom React Hook to resolve ENS name and avatar using EthersJs
+summary: Learn how to fetch ENS name and avatar for any ENS domain using EthersJs.
+date: '2018-11-06T16:52:30.887Z'
+slug: custom-react-hook-to-resolve-ens-name-and-avatar-using-ethersjs
+image: 'https://lagandlog-uploads.s3.amazonaws.com/Group_73_950d8d3db8.png'
+---
+
+<Heading>Prerequisites</Heading>
+
+<TerminalBlock>
+
+npm install ethers
+
+</TerminalBlock>
+
+<Heading>Snippet</Heading>
+
+<CodeSteps>
+
+<CodeStep title="Initialize web3 provider">
+
+The provider is the abstract connection to Ethereum network, it can be anything of your choice, you can also use `JsonRpcProvider`, `InfuraProvider` and more.
+
+[More about Providers](https://docs.ethers.io/v5/api/providers/)
+
+</CodeStep>
+
+<CodeStep title="Lookup with address">
+
+We are now performing a reverse lookup of the address in ENS using the Reverse Registrar.
+
+</CodeStep>
+
+<CodeStep title="ENS Avatar">
+
+Using the resolver from ENS name, we can also get the user's avatar that they recorded in ENS protocol.
+
+</CodeStep>
+
+```js [[1, 14, "const provider = new ethers.providers.JsonRpcProvider(URL_TO_RPC_NODE);"], [2, 16, "ensName"], [3, 19, "avatar"]]
+import { ethers } from "ethers";
+import { useEffect, useState } from "react";
+
+const useENS = (address: string) => {
+  const [ensName, setENSName] = useState<string | null>(null);
+  const [ensAvatar, setENSAvatar] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const resolveENS = async () => {
+      setLoading(true);
+      if (address && ethers.utils.isAddress(address)) {
+        try {
+          const provider = new ethers.providers.JsonRpcProvider(URL_TO_RPC_NODE);
+
+          const ensName = await provider.lookupAddress(address);
+
+          const resolver = ensName ? await provider.getResolver(ensName) : null;
+          const avatar = resolver ? await resolver.getAvatar() : null;
+
+          setENSName(ensName);
+          setENSAvatar(avatar.url);
+        } finally {
+          setLoading(false);
+        }
+      }
+    };
+    resolveENS();
+  }, [address]);
+
+  return { ensName, ensAvatar, loading };
+};
+
+export default useENS;
+```
+
+</CodeSteps>
+
+<Heading>Bonus</Heading>
+
+<Callout>
+
+```jsx
+const { ensName, ensAvatar, loading } = useENS(address);
+```
+If the user pointed their address to a .eth domain, it will lookup for the name of the domain else it will return null, same applies to the avatar.
+
+</Callout>

@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import clsx from 'clsx'
 
 type Props = {
   timeline: Array<{
@@ -31,7 +31,7 @@ const Timeline = (props: Props) => {
                   <div className="flex-grow w-full mt-0 sm:pl-4">
                     <a href={item.link} target="_blank" rel="noreferrer">
                       <h1
-                        className={cn(
+                        className={clsx(
                           'mt-1 mb-2 ml-2 text-xl inline-block border-orange-300 font-semibold md:ml-0 dark:text-gray-100',
                           item.link ? 'border-b' : ''
                         )}

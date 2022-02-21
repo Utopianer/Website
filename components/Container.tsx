@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import clsx from 'clsx'
 import Footer from 'components/Footer'
 import MobileMenu from 'components/MobileMenu'
 import Head from 'next/head'
@@ -23,7 +23,7 @@ function NavItem({
     <NextLink href={href}>
       <a
         target={target}
-        className={cn(
+        className={clsx(
           isActive
             ? 'font-semibold text-gray-800 dark:text-gray-200'
             : 'font-normal text-gray-600 dark:text-gray-400',
@@ -41,19 +41,21 @@ export default function Container(props: {
   title?: string
   description?: string
   image?: string
+  date?: string
 }) {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => setMounted(true), [])
 
-  const { children, description, title, image } = props
+  const { children, description, title, image, date } = props
   const router = useRouter()
   const meta = {
     title: title ?? 'Sasidharan (aka sasid.eth)',
     description: description ?? `Front-end and Web3 developer.`,
     image: image ?? 'https://sasi.codes/static/images/banner.png',
-    type: 'website'
+    type: 'website',
+    date
   }
 
   return (
@@ -77,6 +79,9 @@ export default function Container(props: {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
+        {meta.date && (
+          <meta property="article:published_time" content={meta.date} />
+        )}
       </Head>
       <div className="flex flex-col justify-center px-8">
         <nav className="relative flex items-center justify-between w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 dark:border-gray-700 sm:pb-16 bg-gray-50 dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
@@ -84,13 +89,9 @@ export default function Container(props: {
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/blog" text="Blog" />
-            <NavItem href="https://snippets.sasi.codes" text="Snippets" />
+            <NavItem href="/snippets" text="Snippets" />
             <NavItem href="/uses" text="Uses" />
-            <NavItem
-              href="https://github.com/sasicodes/sasi.codes/discussions/2"
-              text="Guestbook"
-              target="_blank"
-            />
+            <NavItem href="/guestbook" text="Guestbook" target="_blank" />
           </div>
           <button
             aria-label="Toggle Dark Mode"
