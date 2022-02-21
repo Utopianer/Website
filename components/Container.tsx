@@ -53,7 +53,7 @@ export default function Container(props: {
   const meta = {
     title: title ?? 'Sasidharan (aka sasid.eth)',
     description: description ?? `Front-end and Web3 developer.`,
-    image: image ?? 'https://sasi.codes/static/images/banner.png',
+    image: image ?? 'https://sasi.codes/images/banner.png',
     type: 'website',
     date
   }
