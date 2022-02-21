@@ -32,35 +32,40 @@ const ExternalLink = ({ href, name }: { href: string; name: string }) => (
 const nfts = ({ nfts, poaps }: { nfts: NFTType[]; poaps: PoapType[] }) => {
   return (
     <Container title="NFTs" description="NFT collections of sasid.eth">
-      <div className="grid w-full max-w-2xl grid-cols-2 gap-4 mx-auto mb-16 md:grid-cols-4">
-        {nfts?.map(
-          (nft, idx) =>
-            nft.metadata.image_url && (
-              <span key={idx} className="relative overflow-hidden">
-                <ExternalLink name={nft.metadata.name} href={nft.permalink} />
-                <img
-                  className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
-                  src={nft.metadata.image_url}
-                  alt=""
-                  draggable={false}
-                />
-              </span>
-            )
-        )}
-        {poaps?.map((poap, idx) => (
-          <span key={idx} className="relative overflow-hidden">
-            <ExternalLink
-              name={poap.event.name}
-              href="https://app.poap.xyz/scan/0x01d79BcEaEaaDfb8fD2F2f53005289CFcF483464"
-            />
-            <img
-              className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
-              src={poap.event.image_url}
-              alt=""
-              draggable={false}
-            />
-          </span>
-        ))}
+      <div className="w-full max-w-2xl mx-auto mb-16 ">
+        <h3 className="mb-10 text-2xl font-bold tracking-tight text-gray-700 md:text-4xl dark:text-gray-200">
+          Collections
+        </h3>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          {nfts?.map(
+            (nft, idx) =>
+              nft.metadata.image_url && (
+                <span key={idx} className="relative overflow-hidden">
+                  <ExternalLink name={nft.metadata.name} href={nft.permalink} />
+                  <img
+                    className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
+                    src={nft.metadata.image_url}
+                    alt=""
+                    draggable={false}
+                  />
+                </span>
+              )
+          )}
+          {poaps?.map((poap, idx) => (
+            <span key={idx} className="relative overflow-hidden">
+              <ExternalLink
+                name={poap.event.name}
+                href="https://app.poap.xyz/scan/0x01d79BcEaEaaDfb8fD2F2f53005289CFcF483464"
+              />
+              <img
+                className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
+                src={poap.event.image_url}
+                alt=""
+                draggable={false}
+              />
+            </span>
+          ))}
+        </div>
       </div>
     </Container>
   )
