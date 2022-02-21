@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-8">
       <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
-      <div className="grid w-full max-w-2xl grid-cols-2 gap-4 pb-16 sm:grid-cols-5">
+      <div className="grid w-full max-w-2xl grid-cols-2 gap-4 pb-4 sm:grid-cols-5">
         <ExternalLink href="https://app.ens.domains/name/sasid.eth/details">
           ENS
         </ExternalLink>
