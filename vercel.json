@@ -20,6 +20,10 @@
     {
       "source": "/guestbook",
       "destination": "https://github.com/sasicodes/sasi.codes/discussions/2"
+    },
+    {
+      "source": "/analytics",
+      "destination": "https://analytics.sasi.codes"
     }
   ]
 }
