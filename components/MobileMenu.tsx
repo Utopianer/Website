@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import styles from 'styles/mobile-menu.module.css'
+import styles from 'styles/mnav.module.css'
 import useDelayedRender from 'use-delayed-render'
 
 export default function MobileMenu() {
