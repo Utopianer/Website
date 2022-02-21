@@ -13,7 +13,7 @@ export default function Uses() {
             <li>Macbook Pro 14'</li>
             <li>Macbook Air 13'</li>
             <li>Logitech G304</li>
-            <li>LG Monitor 22'</li>
+            <li>LG Monitor 27'</li>
           </ul>
         </div>
       </article>
