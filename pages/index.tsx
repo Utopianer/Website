@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200">
               Frontend Engineer at
-              <span className="font-semibold text-orange-500 ml-1.5">
+              <span className="font-semibold text-orange-600 ml-1.5">
                 HappyFox
               </span>
             </h2>
@@ -37,26 +37,7 @@ export default function Home() {
         </p>
         <Projects />
         <span className="h-14" />
-        <h3 className="mb-10 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-200 md:text-4xl">
-          Timeline
-        </h3>
-        <Timeline
-          timeline={[
-            { title: 'ENS Integration Bounty', time: 'Dec 31, 2021' },
-            {
-              title: 'Polygon Hackathon',
-              time: 'Dec 1, 2021',
-              link: 'https://devfolio.co/submissions/devparty-f6f2'
-            },
-            { title: 'Joined HappyFox Inc', time: 'Sep 1, 2021' },
-            {
-              title: 'Launched Lag and Log',
-              time: 'Dec 15, 2020',
-              link: 'https://lagandlog.com'
-            },
-            { title: 'Joined ConcertCare India', time: 'May 1, 2019' }
-          ]}
-        />
+        <Timeline />
         <span className="h-14" />
         <Subscribe />
       </div>

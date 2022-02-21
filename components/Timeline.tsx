@@ -1,19 +1,15 @@
 import clsx from 'clsx'
+import { TIMELINE } from 'helpers/constants'
 
-type Props = {
-  timeline: Array<{
-    title: string
-    link?: string
-    time: string
-  }>
-}
-
-const Timeline = (props: Props) => {
+const Timeline = () => {
   return (
-    <section className="text-gray-600">
-      <div className="px-2 md:px-3 lg:px-0 lg:pl-4">
-        {props.timeline &&
-          props.timeline.map((item, index) => {
+    <>
+      <h3 className="mb-10 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-200 md:text-4xl">
+        Timeline
+      </h3>
+      <section className="text-gray-600">
+        <div className="px-2 md:px-3 lg:px-0 lg:pl-4">
+          {TIMELINE.map((item, index) => {
             return (
               <div key={index} className="relative flex pb-4 mx-auto">
                 <div className="absolute inset-0 flex items-center justify-center w-1.5 h-full mt-5">
@@ -25,7 +21,7 @@ const Timeline = (props: Props) => {
                       ? 'ring-indigo-400'
                       : 'ring-gray-50 dark:ring-gray-900'
                   } flex-shrink-0 w-1.5 h-1.5 ring ring-offset-4 rounded-full sm:mt-4 mt-5 inline-flex
-                dark:ring-offset-gray-900 ring-offset-gray-100 items-center justify-center bg-indigo-500 relative`}
+                  dark:ring-offset-gray-900 ring-offset-gray-100 items-center justify-center bg-indigo-500 relative`}
                 ></div>
                 <div className="flex flex-col items-start flex-grow pl-3 md:pl-6 sm:items-center sm:flex-row">
                   <div className="flex-grow w-full mt-0 sm:pl-4">
@@ -49,8 +45,9 @@ const Timeline = (props: Props) => {
               </div>
             )
           })}
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   )
 }
 

@@ -19,8 +19,7 @@ export default function ProjectCard({
       <a
         target="_blank"
         className={clsx(
-          'transform transition-all',
-          'rounded-xl w-full bg-gradient-to-r p-1',
+          'transition-all hover:shadow-inner rounded-xl w-full bg-gradient-to-r p-1',
           gradient
         )}
       >

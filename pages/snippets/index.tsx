@@ -24,7 +24,7 @@ const Index = (props: Props) => {
               title={snippet.title}
               summary={snippet.summary}
               slug={snippet.slug}
-              gradient="from-[#D8B4FE]/20 to-[#818CF8]/20"
+              gradient="from-[#FDE68A]/10 via-[#FCA5A5]/20 to-[#FECACA]/20"
             />
           ))}
         </div>

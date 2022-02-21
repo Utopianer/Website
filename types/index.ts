@@ -11,3 +11,17 @@ export type FrontMatter = {
   slug: string
   image: string
 }
+export type NFTType = {
+  permalink: string
+  metadata: {
+    name: string
+    image_url: string
+    animation_url: string
+  }
+}
+export type PoapType = {
+  event: {
+    name: string
+    image_url: string
+  }
+}

@@ -83,7 +83,7 @@ export default function Container(props: {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <div className="flex flex-col justify-center px-4">
+      <div className="flex flex-col justify-center px-5">
         <nav className="relative flex items-center justify-between w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 dark:border-gray-700 sm:pb-16 bg-gray-50 dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
           <div className="ml-[-0.60rem]">
             <MobileMenu />
@@ -91,6 +91,7 @@ export default function Container(props: {
             <NavItem href="/blog" text="Blog" />
             <NavItem href="/snippets" text="Snippets" />
             <NavItem href="/uses" text="Uses" />
+            <NavItem href="/nfts" text="NFTs" />
             <NavItem href="/guestbook" text="Guestbook" target="_blank" />
           </div>
           <button
@@ -129,7 +130,7 @@ export default function Container(props: {
           </button>
         </nav>
       </div>
-      <main className="flex flex-col justify-center px-4 bg-gray-50 dark:bg-gray-900">
+      <main className="flex flex-col justify-center px-5 bg-gray-50 dark:bg-gray-900">
         {children}
         <Footer />
       </main>

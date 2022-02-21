@@ -18,18 +18,17 @@ export default function SnippetCard({
     <Link href={`/snippets/${slug}`}>
       <a
         className={clsx(
-          'transform transition-all',
-          'rounded-xl w-full bg-gradient-to-r p-1',
+          'transition-all hover:shadow-inner rounded-xl w-full bg-gradient-to-r p-1',
           gradient
         )}
       >
         <div className="flex flex-col justify-between h-full p-4 rounded-lg">
           <div className="flex flex-col justify-between md:flex-row">
-            <h4 className="dark:text-gray-200 text-gray-800 w-full mb-4 text-lg font-medium tracking-tight md:text-lg">
+            <h4 className="w-full mb-4 text-lg font-medium tracking-tight text-gray-800 dark:text-gray-200 md:text-lg">
               {title}
             </h4>
           </div>
-          <p className="flex items-center text-sm dark:text-gray-300 text-gray-700">
+          <p className="flex items-center text-sm text-gray-700 dark:text-gray-300">
             {summary}
           </p>
         </div>
