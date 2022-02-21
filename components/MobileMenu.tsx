@@ -85,7 +85,7 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: '350ms' }}
           >
-            <Link href="/uses">
+            <Link href="/nfts">
               <a className="flex w-auto pb-4">NFTs</a>
             </Link>
           </li>
