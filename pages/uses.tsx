@@ -13,7 +13,7 @@ export default function Uses() {
         <div className="mb-10">
           <div className="flex flex-wrap gap-5">
             {USES_APPS.map((app, idx) => (
-              <Tooltip key={idx} placement="top" content={app.name}>
+              <Tooltip key={idx} content={app.name}>
                 <span>
                   <Image
                     height={35}

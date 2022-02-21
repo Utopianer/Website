@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 export function middleware() {
   const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' sudo-umami.up.railway.app;
     style-src 'self' 'unsafe-inline' sudo-umami.up.railway.app;
     img-src * blob: data:;
     media-src 'none';
