@@ -38,7 +38,7 @@ Using the resolver from ENS name, we can also get the user's avatar that they re
 
 </CodeStep>
 
-```js [[1, 14, "const provider = new ethers.providers.JsonRpcProvider(URL_TO_RPC_NODE);"], [2, 16, "ensName"], [3, 19, "avatar"]]
+```js [[1, 14, "const provider = new ethers.providers.getDefaultProvider();"], [2, 16, "ensName"], [3, 19, "avatar"]]
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 
