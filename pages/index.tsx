@@ -31,34 +31,33 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <p className="mb-16 text-gray-600 dark:text-gray-400">
-          Interested in web design, web3, user experience and experimenting new
-          technologies.
+        <p className="mb-16 leading-7 tracking-wide text-gray-600 dark:text-gray-400">
+          I am a software engineer, interested in web design, web3, user
+          experience and experimenting new technologies.
         </p>
         <Projects />
-        <div className="mt-16">
-          <h3 className="mb-6 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-200 md:text-4xl">
-            Timeline
-          </h3>
-          <Timeline
-            timeline={[
-              { title: 'ENS Integration Bounty', time: 'Dec 31, 2021' },
-              {
-                title: 'Polygon Hackathon',
-                time: 'Dec 1, 2021',
-                link: 'https://devfolio.co/submissions/devparty-f6f2'
-              },
-              { title: 'Joined HappyFox Inc', time: 'Sep 1, 2021' },
-              {
-                title: 'Launched Lag and Log',
-                time: 'Dec 15, 2020',
-                link: 'https://lagandlog.com'
-              },
-              { title: 'Joined ConcertCare India', time: 'May 1, 2019' }
-            ]}
-          />
-        </div>
-        <span className="h-16" />
+        <span className="h-14" />
+        <h3 className="mb-10 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-200 md:text-4xl">
+          Timeline
+        </h3>
+        <Timeline
+          timeline={[
+            { title: 'ENS Integration Bounty', time: 'Dec 31, 2021' },
+            {
+              title: 'Polygon Hackathon',
+              time: 'Dec 1, 2021',
+              link: 'https://devfolio.co/submissions/devparty-f6f2'
+            },
+            { title: 'Joined HappyFox Inc', time: 'Sep 1, 2021' },
+            {
+              title: 'Launched Lag and Log',
+              time: 'Dec 15, 2020',
+              link: 'https://lagandlog.com'
+            },
+            { title: 'Joined ConcertCare India', time: 'May 1, 2019' }
+          ]}
+        />
+        <span className="h-14" />
         <Subscribe />
       </div>
     </Container>

@@ -11,7 +11,7 @@ type Props = {
 const Timeline = (props: Props) => {
   return (
     <section className="text-gray-600">
-      <div className="px-2 py-10 md:px-3 lg:px-0 lg:pl-4">
+      <div className="px-2 md:px-3 lg:px-0 lg:pl-4">
         {props.timeline &&
           props.timeline.map((item, index) => {
             return (

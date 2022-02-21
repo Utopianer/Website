@@ -3,15 +3,10 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: optional;
-  src: url(/fonts/Inter.ttf) format('ttf');
   min-width: 360px;
   scroll-behavior: smooth;
 }
 
 body {
-  @apply text-white bg-gray-50 dark:bg-gray-900 min-h-screen flex flex-col;
+  @apply text-white font-sans bg-gray-50 dark:bg-gray-900 min-h-screen flex flex-col;
 }
