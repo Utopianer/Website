@@ -49,9 +49,9 @@ const useENS = (address: string) => {
 
   useEffect(() => {
     const resolveENS = async () => {
-      setLoading(true);
       if (address && ethers.utils.isAddress(address)) {
         try {
+          setLoading(true);
           const provider = new ethers.providers.getDefaultProvider();
 
           const ensName = await provider.lookupAddress(address);
