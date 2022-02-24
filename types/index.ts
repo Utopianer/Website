@@ -6,7 +6,7 @@ export type SnippetType = {
 }
 export type FrontMatter = {
   title: string
-  summary: string
+  description: string
   date: string
   slug: string
   image: string

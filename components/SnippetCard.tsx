@@ -5,14 +5,14 @@ interface CardProps {
   gradient: string
   title: string
   slug: string
-  summary: string
+  description: string
 }
 
 export default function SnippetCard({
   title,
   slug,
   gradient,
-  summary
+  description
 }: CardProps) {
   return (
     <Link href={`/snippets/${slug}`}>
@@ -29,7 +29,7 @@ export default function SnippetCard({
             </h4>
           </div>
           <p className="flex items-center text-sm text-gray-700 dark:text-gray-300">
-            {summary}
+            {description}
           </p>
         </div>
       </a>

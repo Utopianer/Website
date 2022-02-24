@@ -22,7 +22,7 @@ const Index = (props: Props) => {
             <SnippetCard
               key={idx}
               title={snippet.title}
-              summary={snippet.summary}
+              description={snippet.description}
               slug={snippet.slug}
               gradient="from-[#FDE68A]/10 via-[#FCA5A5]/20 to-[#FECACA]/20"
             />
