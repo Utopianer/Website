@@ -195,8 +195,8 @@ function getInlineHighlights(metastring: string, code: string) {
   }
 
   const lines = code.split('\n')
-  const encodedHiglights = JSON.parse(parsedMetastring[1])
-  return encodedHiglights.map(([step, lineNo, substr, fromIndex]: any[]) => {
+  const encodedHighlights = JSON.parse(parsedMetastring[1])
+  return encodedHighlights.map(([step, lineNo, substr, fromIndex]: any[]) => {
     const line = lines[lineNo - 1]
     let index = line.indexOf(substr)
     const lastIndex = line.lastIndexOf(substr)
