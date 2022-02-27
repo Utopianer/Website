@@ -1,0 +1,16 @@
+---
+title: Javascript checks the given date is weekday
+description: Function that checks the given date is weekday or not.
+date: '2022-02-27T16:52:30.887Z'
+slug: check-date-is-weekday-javascript
+image: 'https://lagandlog-uploads.s3.amazonaws.com/Group_74_d810736da2.png'
+---
+
+<Heading>Snippet</Heading>
+
+```js
+const isWeekday = (d: Date): boolean => d.getDay() % 6 !== 0;
+
+isWeekday(new Date(2022, 2, 21)); // -> true
+isWeekday(new Date(2021, 2, 20)); // -> false
+```
