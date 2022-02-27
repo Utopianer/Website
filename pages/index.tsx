@@ -20,20 +20,18 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col pl-8">
-            <h1 className="mb-1 text-4xl font-bold tracking-tight text-gray-700 md:text-5xl dark:text-gray-200">
+            <div className="mb-1 text-4xl font-bold tracking-tight text-gray-700 md:text-5xl dark:text-gray-200">
               Sasidharan
-            </h1>
+            </div>
             <h2 className="text-gray-700 dark:text-gray-200">
-              Frontend Engineer at
-              <span className="font-semibold text-orange-600 ml-1.5">
-                HappyFox
-              </span>
+              Frontend Engineer at{' '}
+              <span className="font-semibold text-orange-600">HappyFox</span>
             </h2>
           </div>
         </div>
         <p className="mb-16 leading-7 tracking-wide text-gray-600 dark:text-gray-400">
-          I am a software engineer, interested in web design, web3, user
-          experience and experimenting new technologies.
+          A software engineer, interested in web design, web3, user experience
+          and experimenting new technologies.
         </p>
         <Projects />
         <span className="h-14" />
