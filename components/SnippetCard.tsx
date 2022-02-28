@@ -24,11 +24,14 @@ export default function SnippetCard({
       >
         <div className="flex flex-col justify-between h-full p-4 rounded-lg">
           <div className="flex flex-col justify-between md:flex-row">
-            <h4 className="w-full mb-4 text-lg font-medium tracking-tight text-gray-800 dark:text-gray-200 md:text-lg">
+            <h4
+              title={title}
+              className="w-full mb-4 text-lg font-medium tracking-tight text-gray-800 line-clamp-2 dark:text-gray-200 md:text-lg"
+            >
               {title}
             </h4>
           </div>
-          <p className="flex items-center text-sm text-gray-700 dark:text-gray-300">
+          <p className="flex items-center text-sm text-gray-700 line-clamp-2 dark:text-gray-300">
             {description}
           </p>
         </div>

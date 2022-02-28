@@ -19,6 +19,7 @@ const Snippet = ({ snippet }: { snippet: SnippetType }) => {
         <h1 className="mb-4 text-3xl font-semibold text-gray-800 md:text-4xl dark:text-gray-200">
           {snippet.frontMatter.title}
         </h1>
+        <p className="opacity-70">{snippet.frontMatter.description}</p>
         <div className="w-full mt-4 text-gray-800 max-w-none dark:text-gray-200">
           <MDXRemote
             {...snippet.mdxSource}
