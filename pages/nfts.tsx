@@ -21,6 +21,6 @@ export async function getStaticProps() {
   const poaps = await poapsResponse.json()
   return {
     props: { nfts: [...ethNfts.results, ...maticNfts.results], poaps },
-    revalidate: 86400 * 7 //  weekly
+    revalidate: 86400
   }
 }
