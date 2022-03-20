@@ -10,9 +10,19 @@ const Projects = () => {
       </h3>
       <div className="grid w-full gap-6 md:grid-cols-2">
         <ProjectCard
+          title="Snapdraw"
+          description="Draw and mint anything."
+          gradient="from-[#D8B4FE]/20 to-[#818CF8]/20"
+          href="https://mint.sasi.codes"
+          images={[
+            'https://cloudflare-ipfs.com/ipfs/QmdJGewR6LGVdnGXx2umVLofLJvUP5QnnctPt18hvfXXdX',
+            'https://cloudflare-ipfs.com/ipfs/QmVgWpSsRXPa1jcJsKRfsbrVDuUTDR91VxfQb94yqKNnq5'
+          ]}
+        />
+        <ProjectCard
           title="Generative Art Collection"
           description="Completely on-chain random NFTs."
-          gradient="from-[#D8B4FE]/20 to-[#818CF8]/20"
+          gradient="from-[#41AAD4]/20 to-[#41EAD4]/20"
           href="https://gorilla-gang.vercel.app"
           images={[
             'https://cloudflare-ipfs.com/ipfs/QmXc7DmhUczBp1252wY5kGPve5Ajwseve7oYasHSPkAjY1'
