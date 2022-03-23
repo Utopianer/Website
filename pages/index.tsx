@@ -15,7 +15,7 @@ export default function Home() {
               alt="sasicodes"
               height={90}
               width={90}
-              src="https://metadata.ens.domains/mainnet/avatar/sasid.eth"
+              src="https://metadata.ens.domains/mainnet/avatar/sasi.eth"
               className="my-auto rounded-full filter grayscale"
             />
           </div>
