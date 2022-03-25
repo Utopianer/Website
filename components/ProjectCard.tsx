@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { IPFS_GATEWAY } from 'helpers/constants'
 import Link from 'next/link'
 
 export default function ProjectCard({
@@ -35,12 +36,12 @@ export default function ProjectCard({
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            {images.map((src, idx) => (
+            {images.map((hash, idx) => (
               <img
                 className="h-10 rounded"
                 loading="eager"
                 key={idx}
-                src={src}
+                src={`${IPFS_GATEWAY}/${hash}`}
                 alt=""
               />
             ))}

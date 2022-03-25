@@ -4,6 +4,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['cloudflare-ipfs.com', 'metadata.ens.domains']
+    domains: ['ipfs.infura.io', 'metadata.ens.domains']
   }
 }
