@@ -51,8 +51,8 @@ export default function Container(props: {
   const { children, description, title, image, date } = props
   const router = useRouter()
   const meta = {
-    title: title ?? 'Sasidharan (aka sasid.eth)',
-    description: description ?? `Front-end and Web3 developer.`,
+    title: title ?? 'Sasidharan (aka sasi.eth)',
+    description: description ?? `Front stack developer.`,
     image: image ?? 'https://sasi.codes/images/banner.png',
     type: 'website',
     date
