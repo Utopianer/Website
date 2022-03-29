@@ -1,6 +1,6 @@
 import Container from 'components/Container'
 import Tooltip from 'components/Tooltip'
-import { USES_APPS } from 'helpers/constants'
+import { USES_APPS, USES_BOOKMARKS } from 'helpers/constants'
 import Image from 'next/image'
 
 export default function Uses() {
@@ -36,56 +36,18 @@ export default function Uses() {
             Bookmarks
           </h3>
           <ul className="ml-3 space-y-2 list-disc list-inside">
-            <li>
-              <a
-                href="https://devhints.io/"
-                className="transition-all ease-in hover:border-orange-300 hover:duration-300 hover:border-b-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Dev Cheatsheet
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://bundlephobia.com/"
-                className="transition-all ease-in hover:border-orange-300 hover:duration-300 hover:border-b-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Bundlephobia
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://chainlist.org/"
-                className="transition-all ease-in hover:border-orange-300 hover:duration-300 hover:border-b-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Chainlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://icones.js.org/"
-                className="transition-all ease-in hover:border-orange-300 hover:duration-300 hover:border-b-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Icones
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://hypercolor.dev/"
-                className="transition-all ease-in hover:border-orange-300 hover:duration-300 hover:border-b-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Hypercolor
-              </a>
-            </li>
+            {USES_BOOKMARKS.map(({ link, name }, idx) => (
+              <li key={idx}>
+                <a
+                  href={link}
+                  className="transition-all ease-in hover:border-orange-300 hover:duration-300 hover:border-b-2"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

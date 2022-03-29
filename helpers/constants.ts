@@ -59,6 +59,29 @@ export const USES_APPS = [
   }
 ]
 
+export const USES_BOOKMARKS = [
+  {
+    name: 'Icones',
+    link: 'https://icones.js.org/'
+  },
+  {
+    name: 'Chainlist',
+    link: 'https://chainlist.org/'
+  },
+  {
+    name: 'Hypercolor',
+    link: 'https://hypercolor.dev/'
+  },
+  {
+    name: 'Bundlephobia',
+    link: 'https://bundlephobia.com/'
+  },
+  {
+    name: 'Dev Cheatsheet',
+    link: 'https://devhints.io/'
+  }
+]
+
 export const TIMELINE = [
   { title: 'ENS Integration Bounty', time: 'Dec 31, 2021' },
   {
