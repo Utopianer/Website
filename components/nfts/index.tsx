@@ -31,7 +31,7 @@ const NFTPage = ({ nfts, poaps }: { nfts: NFTType[]; poaps: PoapType[] }) => {
   return (
     <Container title="NFTs" description="NFT collections of sasid.eth">
       <div className="w-full max-w-2xl mx-auto mb-16 ">
-        <h3 className="mb-10 text-2xl font-bold tracking-tight text-gray-700 md:text-4xl dark:text-gray-200">
+        <h3 className="mb-10 text-2xl font-semibold tracking-tight text-gray-700 md:text-4xl dark:text-gray-200">
           Collections
         </h3>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">

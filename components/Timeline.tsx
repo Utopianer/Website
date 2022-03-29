@@ -4,7 +4,7 @@ import { TIMELINE } from 'helpers/constants'
 const Timeline = () => {
   return (
     <>
-      <h3 className="mb-10 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-200 md:text-4xl">
+      <h3 className="mb-10 text-2xl font-semibold tracking-tight text-gray-700 dark:text-gray-200 md:text-4xl">
         Timeline
       </h3>
       <section className="text-gray-600">

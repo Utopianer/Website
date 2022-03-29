@@ -1,7 +1,7 @@
 export default function Subscribe() {
   return (
     <div className="w-full py-6 my-4">
-      <p className="text-lg font-bold text-gray-900 md:text-xl dark:text-gray-200">
+      <p className="text-lg font-semibold text-gray-900 md:text-xl dark:text-gray-200">
         Subscribe to the newsletter
       </p>
       <div id="revue-embed">
