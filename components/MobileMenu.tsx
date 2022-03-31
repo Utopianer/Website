@@ -1,8 +1,8 @@
 import clsx from 'clsx'
+import useDelayedRender from 'helpers/hooks/useDelayedRender'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import styles from 'styles/mnav.module.css'
-import useDelayedRender from 'use-delayed-render'
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
