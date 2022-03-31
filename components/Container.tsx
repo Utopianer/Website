@@ -52,7 +52,7 @@ export default function Container(props: {
   const router = useRouter()
   const meta = {
     title: title ?? 'Sasidharan (aka sasi.eth)',
-    description: description ?? `Front stack developer.`,
+    description: description ?? `Full stack developer.`,
     image: image ?? 'https://sasi.codes/images/banner.png',
     type: 'website',
     date
