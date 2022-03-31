@@ -1,7 +1,6 @@
 import Container from 'components/Container'
 import Tooltip from 'components/Tooltip'
 import { USES_APPS, USES_BOOKMARKS } from 'helpers/constants'
-import Image from 'next/image'
 
 export default function Uses() {
   return (
@@ -18,7 +17,7 @@ export default function Uses() {
             {USES_APPS.map((app, idx) => (
               <Tooltip key={idx} content={app.name}>
                 <span>
-                  <Image
+                  <img
                     height={35}
                     width={35}
                     className="bg-gray-100 rounded-lg dark:bg-gray-800"

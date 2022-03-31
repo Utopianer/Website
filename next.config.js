@@ -3,7 +3,7 @@
  */
 module.exports = {
   reactStrictMode: true,
-  exportTrailingSlash: true,
+  trailingSlash: true,
   images: {
     domains: ['ipfs.infura.io', 'metadata.ens.domains']
   }
