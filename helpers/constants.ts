@@ -11,7 +11,7 @@ export const USES_APPS = [
   },
   {
     name: 'VS Code',
-    image: `${IPFS_GATEWAY}/QmQYkx5Y7aZjeCk2cqCFutnt6vbKo7Awjd7nCBN8jCAZ4y`
+    image: `${IPFS_GATEWAY}/QmU7ukJ7Gk2d2CCaVJyemeRPTexfThU5qEXqhzFtr2fdgw`
   },
   {
     name: 'Github',
@@ -20,6 +20,14 @@ export const USES_APPS = [
   {
     name: 'Vercel',
     image: `${IPFS_GATEWAY}/QmecjAVFpXhwwtgyfsrf83CM3zhpbeCzU8AaZ6uh2oWm3E`
+  },
+  {
+    name: 'Pika',
+    image: `${IPFS_GATEWAY}/QmXmFxERFGNnJK3Wg6K3mFNE9mAGHHu81iFiVG86LUgcYm`
+  },
+  {
+    name: 'Cron',
+    image: `${IPFS_GATEWAY}/QmVZ5c7C6UrHxkkp96Sv5HyCL8wWPe93iQzi3QRkCeo7Hd`
   },
   {
     name: 'Rainbow Wallet',
@@ -47,7 +55,7 @@ export const USES_APPS = [
   },
   {
     name: 'NextJs',
-    image: `${IPFS_GATEWAY}/QmUC6FsHQLqmMCQuXWRjKmomu41ydK4xAv4hTSZdFW4we9`
+    image: `${IPFS_GATEWAY}/Qmav46fax7Z2jTdZVYrHqVphbmqk7vNWxn2RK5AGN58LBU`
   },
   {
     name: 'Figma',

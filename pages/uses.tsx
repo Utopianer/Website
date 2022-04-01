@@ -11,7 +11,7 @@ export default function Uses() {
       <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
         <div className="mb-10">
           <h3 className="mb-6 text-2xl font-semibold tracking-tight text-gray-700 dark:text-gray-200 md:text-3xl">
-            Most used
+            Stack
           </h3>
           <div className="flex flex-wrap gap-5">
             {USES_APPS.map((app, idx) => (
