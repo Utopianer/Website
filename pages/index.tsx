@@ -1,3 +1,4 @@
+import HelperProjects from 'components/HelperProjects'
 import Projects from 'components/Projects'
 import Timeline from 'components/Timeline'
 
@@ -33,6 +34,8 @@ export default function Home() {
           and experimenting new technologies.
         </p>
         <Projects />
+        <span className="h-14" />
+        <HelperProjects />
         <span className="h-14" />
         <Timeline />
         <span className="h-14" />

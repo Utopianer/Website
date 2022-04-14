@@ -13,7 +13,7 @@ export default function ProjectCard({
   description: string
   gradient: string
   href: string
-  images: string[]
+  images?: string[]
 }) {
   return (
     <Link href={href}>
@@ -25,27 +25,29 @@ export default function ProjectCard({
         )}
       >
         <div className="flex flex-col justify-between h-full p-4 rounded-lg">
-          <div className="mb-4">
+          <div className="">
             <div className="flex flex-col justify-between md:flex-row">
-              <h4 className="w-full text-lg font-medium tracking-tight text-gray-900 md:text-lg dark:text-gray-100">
+              <h4 className="w-full text-lg font-bold tracking-wide text-gray-900 opacity-90 md:text-lg dark:text-gray-100">
                 {title}
               </h4>
             </div>
-            <div className="flex items-center text-gray-800 dark:text-gray-200">
+            <div className="flex items-center text-gray-800 opacity-80 dark:text-gray-200">
               <p>{description}</p>
             </div>
           </div>
-          <div className="flex items-center space-x-2">
-            {images.map((hash, idx) => (
-              <img
-                className="h-10 rounded"
-                loading="eager"
-                key={idx}
-                src={`${IPFS_GATEWAY}/${hash}`}
-                alt=""
-              />
-            ))}
-          </div>
+          {images && (
+            <div className="flex items-center mt-4 space-x-2">
+              {images?.map((hash, idx) => (
+                <img
+                  className="h-10 rounded"
+                  loading="eager"
+                  key={idx}
+                  src={`${IPFS_GATEWAY}/${hash}`}
+                  alt=""
+                />
+              ))}
+            </div>
+          )}
         </div>
       </a>
     </Link>
