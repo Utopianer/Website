@@ -12,13 +12,13 @@ const HelperProjects = () => {
         <ProjectCard
           title="Burner wallet"
           description="Disposable temporary ethereum wallets for quick transfers, deployments, etc."
-          gradient="from-[#41AAD4]/20 to-[#41EAD4]/20"
+          gradient="from-[#001F54]/60 to-[#B20D30]/20"
           href="https://wallet.sasi.codes"
         />
         <ProjectCard
           title="IPFS uploader"
           description="Easily upload all types of images to IPFS via browser."
-          gradient="from-[#D8B4FE]/20 to-[#818CF8]/20"
+          gradient="from-[#D90429]/30 to-[#FED18C]/10"
           href="https://ipfs.sasi.codes"
         />
       </div>
