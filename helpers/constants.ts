@@ -26,8 +26,8 @@ export const USES_APPS = [
     image: `${IPFS_GATEWAY}/QmXmFxERFGNnJK3Wg6K3mFNE9mAGHHu81iFiVG86LUgcYm`
   },
   {
-    name: 'Cron',
-    image: `${IPFS_GATEWAY}/QmVZ5c7C6UrHxkkp96Sv5HyCL8wWPe93iQzi3QRkCeo7Hd`
+    name: 'Fig',
+    image: `${IPFS_GATEWAY}/QmfXfGwzad2NcsiCBBMn6fdkhEkqLdbxGz65GtaEWChoyr`
   },
   {
     name: 'Rainbow Wallet',
