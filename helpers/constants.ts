@@ -91,6 +91,11 @@ export const USES_BOOKMARKS = [
 ]
 
 export const TIMELINE = [
+  {
+    title: 'Filecoin & IPFS Bounty Winner, Web3Con',
+    time: 'Apr 14, 2022',
+    link: 'https://www.web3con.dev/2022-recap'
+  },
   { title: 'ENS Integration Bounty', time: 'Dec 31, 2021' },
   {
     title: 'Polygon Hackathon',
