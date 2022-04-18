@@ -1,8 +1,12 @@
 import NFTPage from 'components/nfts'
 import React from 'react'
-import { NFTType, PoapType } from 'types'
+import { KudosType, NFTType, PoapType } from 'types'
 
-const nfts = (props: { nfts: NFTType[]; poaps: PoapType[] }) => {
+const nfts = (props: {
+  nfts: NFTType[]
+  poaps: PoapType[]
+  kudos: KudosType[]
+}) => {
   return <NFTPage {...props} />
 }
 
@@ -16,11 +20,17 @@ export async function getStaticProps() {
     `${process.env.NFTS_DATA as string}&network=ethereum`
   )
   const poapsResponse = await fetch(process.env.POAP_DATA as string)
+  const kudosResponse = await fetch(process.env.KUDOS_DATA as string)
   const maticNfts = await maticNftsResponse.json()
   const ethNfts = await ethNftsResponse.json()
   const poaps = await poapsResponse.json()
+  const kudos = await kudosResponse.json()
   return {
-    props: { nfts: [...ethNfts.results, ...maticNfts.results], poaps },
+    props: {
+      nfts: [...ethNfts.results, ...maticNfts.results],
+      poaps,
+      kudos: kudos.highlightedKudoses
+    },
     revalidate: 86400
   }
 }
