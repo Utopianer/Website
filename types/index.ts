@@ -25,7 +25,3 @@ export type PoapType = {
     image_url: string
   }
 }
-export type KudosType = {
-  headline: string
-  imageUrl: string
-}

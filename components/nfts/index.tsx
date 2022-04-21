@@ -1,7 +1,7 @@
 import Container from 'components/Container'
 import Tooltip from 'components/Tooltip'
 import React from 'react'
-import { KudosType, NFTType, PoapType } from 'types'
+import { NFTType, PoapType } from 'types'
 
 const ExternalLink = ({ href }: { href: string }) => (
   <a
@@ -29,10 +29,9 @@ const ExternalLink = ({ href }: { href: string }) => (
 type Props = {
   nfts: NFTType[]
   poaps: PoapType[]
-  kudos: KudosType[]
 }
 
-const NFTPage = ({ nfts, poaps, kudos }: Props) => {
+const NFTPage = ({ nfts, poaps }: Props) => {
   return (
     <Container title="NFTs" description="NFT collections of sasid.eth">
       <div className="w-full max-w-2xl mx-auto mb-16 ">
@@ -56,19 +55,6 @@ const NFTPage = ({ nfts, poaps, kudos }: Props) => {
                 </Tooltip>
               )
           )}
-          {kudos?.map((item, idx) => (
-            <Tooltip key={idx} content={item.headline}>
-              <span className="relative overflow-hidden">
-                <ExternalLink href="https://mintkudos.xyz/profile/0x01d79BcEaEaaDfb8fD2F2f53005289CFcF483464" />
-                <img
-                  className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
-                  src={item.imageUrl}
-                  alt=""
-                  draggable={false}
-                />
-              </span>
-            </Tooltip>
-          ))}
           {poaps?.map((poap, idx) => (
             <Tooltip key={idx} content={poap.event.name}>
               <span className="relative overflow-hidden">
