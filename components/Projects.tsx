@@ -5,7 +5,10 @@ import ProjectCard from './ProjectCard'
 const Projects = () => {
   return (
     <>
-      <h3 className="mb-10 text-2xl font-semibold tracking-tight text-gray-700 md:text-4xl dark:text-gray-200">
+      <h3
+        id="projects"
+        className="mb-10 text-2xl font-semibold tracking-tight text-gray-700 md:text-4xl dark:text-gray-200"
+      >
         Projects
       </h3>
       <div className="grid w-full gap-6 md:grid-cols-2">
