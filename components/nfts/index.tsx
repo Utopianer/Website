@@ -43,10 +43,10 @@ const NFTPage = ({ nfts, poaps }: Props) => {
             (nft, idx) =>
               nft.metadata.image_url && (
                 <Tooltip key={idx} content={nft.metadata.name}>
-                  <span className="relative overflow-hidden">
+                  <span className="relative overflow-hidden min-h-[150px] max-h-[150px]">
                     <ExternalLink href={nft.permalink} />
                     <img
-                      className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
+                      className="w-full h-full bg-gray-100 rounded-lg dark:bg-gray-800"
                       src={nft.metadata.image_url}
                       alt=""
                       draggable={false}
@@ -57,10 +57,12 @@ const NFTPage = ({ nfts, poaps }: Props) => {
           )}
           {poaps?.map((poap, idx) => (
             <Tooltip key={idx} content={poap.event.name}>
-              <span className="relative overflow-hidden">
-                <ExternalLink href="https://app.poap.xyz/scan/0x01d79BcEaEaaDfb8fD2F2f53005289CFcF483464" />
+              <span className="relative overflow-hidden min-h-[150px] max-h-[150px]">
+                <ExternalLink
+                  href={`https://app.poap.xyz/token/${poap.tokenId}`}
+                />
                 <img
-                  className="h-full bg-gray-100 rounded-lg dark:bg-gray-800"
+                  className="w-full h-full bg-gray-100 rounded-lg dark:bg-gray-800"
                   src={poap.event.image_url}
                   alt=""
                   draggable={false}

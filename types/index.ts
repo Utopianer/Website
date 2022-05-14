@@ -24,4 +24,5 @@ export type PoapType = {
     name: string
     image_url: string
   }
+  tokenId: string
 }
