@@ -29,6 +29,10 @@ export default function Home() {
             </h2>
           </div>
         </div>
+
+        <span className="text-[11px] mr-1 font-semibold text-teal-600 rounded-lg">
+          3+ YOE
+        </span>
         <p className="mb-16 leading-7 tracking-wide text-gray-600 dark:text-gray-400">
           A software engineer, interested in web design, web3, user experience
           and experimenting new technologies.

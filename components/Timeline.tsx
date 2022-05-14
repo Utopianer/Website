@@ -11,7 +11,7 @@ const Timeline = () => {
         <div className="px-2 md:px-3 lg:px-0 lg:pl-4">
           {TIMELINE.map((item, index) => {
             return (
-              <div key={index} className="relative flex pb-4 mx-auto">
+              <div key={index} className="relative flex pb-5 mx-auto">
                 <div className="absolute inset-0 flex items-center justify-center w-1.5 h-full mt-5">
                   <div className="h-full w-0.5 bg-gray-300 dark:bg-gray-700 pointer-events-none"></div>
                 </div>
@@ -28,14 +28,15 @@ const Timeline = () => {
                     <a href={item.link} target="_blank" rel="noreferrer">
                       <h1
                         className={clsx(
-                          'mt-1 mb-2 ml-2 text-xl inline-block border-orange-300 font-semibold md:ml-0 dark:text-gray-100',
+                          'mt-1 ml-2 text-xl inline-block border-orange-300 font-semibold md:ml-0 dark:text-gray-100',
                           item.link ? 'border-b' : ''
                         )}
                       >
                         {item.title}
                       </h1>
+                      <p className="text-sm">{item.description}</p>
                     </a>
-                    <div className="flex flex-row items-center">
+                    <div className="flex flex-row items-center mt-2">
                       <small className="ml-2 leading-none md:ml-0 dark:text-gray-100">
                         {item.time}
                       </small>

@@ -102,11 +102,19 @@ export const TIMELINE = [
     time: 'Dec 1, 2021',
     link: 'https://devfolio.co/submissions/devparty-f6f2'
   },
-  { title: 'Joined HappyFox Inc', time: 'Sep 1, 2021' },
+  {
+    title: 'Joined HappyFox Inc',
+    time: 'Sep 1, 2021',
+    description: 'Frontend Engineer'
+  },
   {
     title: 'Launched Lag and Log',
     time: 'Dec 15, 2020',
     link: 'https://lagandlog.com'
   },
-  { title: 'Joined ConcertCare India', time: 'May 1, 2019' }
+  {
+    title: 'Joined ConcertIDC',
+    description: 'Software Engineer',
+    time: 'May 1, 2019'
+  }
 ]
