@@ -9,7 +9,9 @@ image: 'https://lagandlog-uploads.s3.amazonaws.com/hex_1f652bbc0b.png'
 <Heading>Snippet</Heading>
 
 ```js
-const hexToString = (hexString: String): number => parseInt(Number(hexString).toString());
+const hexToString = (hexString: String): number => {
+    return parseInt(Number(hexString).toString());
+}
 
 hexToString("0x30000000000000000000000000000000000000000000000000000000000000064"); // -> 3
 ```
