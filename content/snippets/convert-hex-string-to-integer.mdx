@@ -1,0 +1,15 @@
+---
+title: Convert hex string to integer using Javascript
+description: Mostly helpful to convert solidity transaction log data hex string into integer
+date: '2022-05-16T20:52:30.887Z'
+slug: convert-hex-string-to-integer
+image: 'https://lagandlog-uploads.s3.amazonaws.com/hex_1f652bbc0b.png'
+---
+
+<Heading>Snippet</Heading>
+
+```js
+const hexToString = (hexString: String): number => parseInt(Number(hexString).toString());
+
+hexToString("0x30000000000000000000000000000000000000000000000000000000000000064"); // -> 3
+```
