@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="light">
       <Toaster position="top-right" />
       <Component {...pageProps} />
     </ThemeProvider>

@@ -34,7 +34,9 @@ const Timeline = () => {
                       >
                         {item.title}
                       </h1>
-                      <p className="text-sm">{item.description}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                        {item.description}
+                      </p>
                     </a>
                     <div className="flex flex-row items-center mt-2">
                       <small className="ml-2 leading-none md:ml-0 dark:text-gray-100">

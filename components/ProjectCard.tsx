@@ -5,13 +5,13 @@ import Link from 'next/link'
 export default function ProjectCard({
   title,
   description,
-  gradient,
+  className,
   href,
   images
 }: {
   title: string
   description: string
-  gradient: string
+  className: string
   href: string
   images?: string[]
 }) {
@@ -21,7 +21,7 @@ export default function ProjectCard({
         target="_blank"
         className={clsx(
           'transition-all hover:shadow-inner rounded-xl w-full bg-gradient-to-r p-1',
-          gradient
+          className
         )}
       >
         <div className="flex flex-col justify-between h-full p-4 rounded-lg">

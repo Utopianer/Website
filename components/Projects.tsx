@@ -15,7 +15,7 @@ const Projects = () => {
         <ProjectCard
           title="Snapdraw"
           description="Draw and mint anything."
-          gradient="from-[#D8B4FE]/20 to-[#818CF8]/20"
+          className="from-[#D8B4FE]/20 to-[#818CF8]/20"
           href="https://mint.sasi.codes"
           images={[
             'QmdJGewR6LGVdnGXx2umVLofLJvUP5QnnctPt18hvfXXdX',
@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectCard
           title="Generative Art Collection"
           description="Completely on-chain random NFTs."
-          gradient="from-[#41AAD4]/20 to-[#41EAD4]/20"
+          className="from-[#41AAD4]/20 to-[#41EAD4]/20"
           href="https://gorilla-gang.vercel.app"
           images={['QmXc7DmhUczBp1252wY5kGPve5Ajwseve7oYasHSPkAjY1']}
         />
@@ -37,7 +37,7 @@ const Projects = () => {
             'QmPU4Lsqp5UpVQTCDfWyxQAMkzk13QNYNUSb9Z1vDfGxVa'
           ]}
           href="https://lagandlog.com"
-          gradient="from-[#FDE68A]/20 via-[#FCA5A5]/20 to-[#FECACA]/20"
+          className="from-[#FDE68A]/20 via-[#FCA5A5]/20 to-[#FECACA]/20"
         />
       </div>
     </>
