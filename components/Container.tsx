@@ -101,8 +101,8 @@ export default function Container(props: {
             >
               <Image
                 src="/images/twitterlogo.svg"
-                height={18}
-                width={18}
+                height={20}
+                width={20}
                 alt=""
               />
             </a>
