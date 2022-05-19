@@ -90,7 +90,11 @@ export default function Container(props: {
             <NavItem href="/" text="Home" />
             <NavItem href="/uses" text="Uses" />
             <NavItem href="/nfts" text="NFTs" />
-            <NavItem href="/guestbook" text="Guestbook" target="_blank" />
+            <NavItem
+              href="https://github.com/sasicodes/sasi.codes/discussions/2"
+              text="Guestbook"
+              target="_blank"
+            />
           </div>
           <div className="flex items-center space-x-2 md:space-x-3">
             <a
