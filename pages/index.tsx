@@ -1,5 +1,5 @@
 import HelperProjects from 'components/HelperProjects'
-import ChevronRightIcon from 'components/icons/ChevronRight'
+import LinkIcon from 'components/icons/LinkIcon'
 import Projects from 'components/Projects'
 import Timeline from 'components/Timeline'
 import Link from 'next/link'
@@ -34,7 +34,7 @@ export default function Home() {
 
         <p className="mb-10 leading-7 tracking-wide text-gray-600 dark:text-gray-400">
           A product developer, passionate about
-          <span className="mx-1 text-transparent transition-all duration-500 bg-gradient-to-tr from-purple-400 bg-clip-text to-pink-600">
+          <span className="ml-1 text-transparent transition-all duration-500 bg-gradient-to-tr from-purple-400 bg-clip-text to-pink-600">
             web design
           </span>
           ,
@@ -49,16 +49,16 @@ export default function Home() {
         </p>
 
         <Link href="blog">
-          <a className="inline-flex items-center mb-2 text-lg font-semibold tracking-tight text-gray-700 text-opacity-80 hover:text-opacity-100 dark:text-gray-200">
+          <a className="inline-flex items-center mb-2 text-lg font-semibold tracking-tight text-gray-700 opacity-70 hover:opacity-100 dark:text-gray-200">
+            <LinkIcon />
             Posts
-            <ChevronRightIcon />
           </a>
         </Link>
 
         <Link href="snippets">
-          <a className="inline-flex items-center mb-10 text-lg font-semibold tracking-tight text-gray-700 text-opacity-80 hover:text-opacity-100 dark:text-gray-200">
+          <a className="inline-flex items-center mb-10 text-lg font-semibold tracking-tight text-gray-700 opacity-70 hover:opacity-100 dark:text-gray-200">
+            <LinkIcon />
             Snippets
-            <ChevronRightIcon />
           </a>
         </Link>
 

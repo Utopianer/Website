@@ -18,7 +18,7 @@ function NavItem({
   target?: string
 }) {
   const router = useRouter()
-  const isActive = router.asPath === href
+  const isActive = router.pathname === href
 
   return (
     <NextLink href={href}>
@@ -28,7 +28,7 @@ function NavItem({
           isActive
             ? 'font-semibold text-gray-800 dark:text-gray-200'
             : 'font-normal text-gray-600 dark:text-gray-400',
-          'hidden md:inline-block px-3 transition-all hover:text-opacity-100 text-opacity-50'
+          'hidden md:inline-block px-3 transition-all hover:opacity-100 opacity-50'
         )}
       >
         <span className="text-sm">{text}</span>
