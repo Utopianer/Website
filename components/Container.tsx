@@ -2,7 +2,6 @@ import clsx from 'clsx'
 import Footer from 'components/Footer'
 import MobileMenu from 'components/MobileMenu'
 import Head from 'next/head'
-import Image from 'next/image'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
@@ -103,11 +102,12 @@ export default function Container(props: {
               className="inline-flex items-center opacity-50 hover:opacity-100"
               rel="noreferrer"
             >
-              <Image
+              <img
                 src="/images/twitterlogo.svg"
                 height={20}
                 width={20}
                 alt=""
+                draggable={false}
               />
             </a>
             <button
