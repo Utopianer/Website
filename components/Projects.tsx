@@ -15,7 +15,7 @@ const Projects = () => {
         <ProjectCard
           title="Lenstube"
           description="Decentralized video platform."
-          className="from-[#D8B4FE]/20 to-[#818CF8]/20"
+          className="from-[#fffea4]/20 to-[#6e71e8]/20"
           href="https://lenstube.xyz"
           images={['QmSQQuXnoUMMj6DMWvptygJMawT34bUSTkb2YTpwL6SLu1']}
         />
