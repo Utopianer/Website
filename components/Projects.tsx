@@ -13,6 +13,13 @@ const Projects = () => {
       </h3>
       <div className="grid w-full gap-6 md:grid-cols-2">
         <ProjectCard
+          title="Lenstube"
+          description="Decentralized video platform."
+          className="from-[#D8B4FE]/20 to-[#818CF8]/20"
+          href="https://lenstube.xyz"
+          images={['QmSQQuXnoUMMj6DMWvptygJMawT34bUSTkb2YTpwL6SLu1']}
+        />
+        <ProjectCard
           title="Snapdraw"
           description="Draw and mint anything."
           className="from-[#D8B4FE]/20 to-[#818CF8]/20"
